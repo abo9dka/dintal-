@@ -1,0 +1,173 @@
+@import url(
+    "https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700;800&display=swap"
+);
+
+@import "./styles/variables.css";
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+    min-height: 100%;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease;
+}
+
+body {
+    width: 100%;
+    min-width: 320px;
+    min-height: 100vh;
+
+    margin: 0;
+
+    font-family: "Tajawal", sans-serif;
+
+    background: var(--bg-primary);
+    color: var(--text-primary);
+
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease;
+}
+
+#root {
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+/* =========================================================
+   TYPOGRAPHY
+========================================================= */
+
+body,
+button,
+input,
+textarea,
+select {
+    font-family: "Tajawal", sans-serif;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+
+/* =========================================================
+   RTL / LTR FOUNDATION
+========================================================= */
+
+html[dir="rtl"] {
+    direction: rtl;
+}
+
+html[dir="ltr"] {
+    direction: ltr;
+}
+
+
+/* =========================================================
+   FORM ELEMENTS
+========================================================= */
+
+input,
+textarea,
+select {
+    color: var(--text-primary);
+    background: var(--surface);
+    border-color: var(--border);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--text-muted);
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+button {
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   LINKS
+========================================================= */
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   SELECTION
+========================================================= */
+
+::selection {
+    background: var(--primary-light);
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   SCROLLBAR
+========================================================= */
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-tertiary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--text-muted);
+}
+
+/* =========================================================
+   DARK MODE - GLOBAL
+========================================================= */
+
+html[data-theme="dark"],
+body[data-theme="dark"] {
+    background: #0f172a;
+    color: #f8fafc;
+}
+
+[data-theme="dark"] .doctor-layout {
+    background: #0f172a;
+}
+
+[data-theme="dark"] .doctor-main {
+    background: #0f172a;
+}
+
+[data-theme="dark"] .doctor-content {
+    background: #0f172a;
+}
